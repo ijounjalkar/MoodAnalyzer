@@ -1,5 +1,4 @@
 package com.MoodAnalyser;
-import  java.util.Scanner;
 public class MoodAnalyzer {
 		public String message;
 

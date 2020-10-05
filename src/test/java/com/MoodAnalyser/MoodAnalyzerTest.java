@@ -1,7 +1,11 @@
 package com.MoodAnalyser;
+
+
 import static org.junit.Assert.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
+
 
 public class MoodAnalyzerTest {
 
@@ -11,7 +15,7 @@ public class MoodAnalyzerTest {
 		void givenMessage_whensad_returnSadMood() {
 			MoodAnalyzer moodanalyzer = new MoodAnalyzer("I am in Sad Mood");
 			String testcase1 = moodanalyzer.analyseMood();
-			assertEquals("SAD", testcase1);
+            assertEquals("SAD", testcase1);
 		}
 
 		@Test
@@ -26,10 +30,7 @@ public class MoodAnalyzerTest {
 			MoodAnalyzer moodanalyzerobj1 = new MoodAnalyzer(null);
 		    String result = moodanalyzerobj1.analyseMood();
 		    assertEquals("HAPPY", result);
-			
-				
-			
-			
 		}
+		
 
 }
